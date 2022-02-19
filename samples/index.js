@@ -45,7 +45,7 @@ new Chart(ctx, {
 			animateRotate: true
 		},
 		plugins: {
-			doughnutlabel: {
+			doughnutLabel: {
 				labels: [
 					{
 						text: 'The title',
@@ -108,7 +108,7 @@ new Chart(ctx, {
 			animateRotate: true
 		},
 		plugins: {
-			doughnutlabel: {
+			doughnutLabel: {
 				labels: [
 					{
 						text: 'This is one line of text',
