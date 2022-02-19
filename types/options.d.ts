@@ -1,4 +1,4 @@
-import { LabelText } from './options.d';
+// import { LabelText } from './options.d';
 import { Chart, ChartComponent, Color, FontSpec } from 'chart.js';
 
 // export interface Font extends FontSpec {
