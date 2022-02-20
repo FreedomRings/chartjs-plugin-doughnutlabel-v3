@@ -1,9 +1,9 @@
 
   /**
-   * @scottalan/chartjs-plugin-doughnutlabel v3.0.2
+   * chartjs-plugin-doughnutlabel-v3 v3.0.3
    * @license
-   * author: 
-   * chartjs-plugin-doughnutlabel.js v3.0.2
+   * author: Jeff Brower
+   * chartjs-plugin-doughnutlabel.js v3.0.3
    * Released under the ISC license.
    */
 

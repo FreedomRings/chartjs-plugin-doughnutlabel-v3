@@ -1,9 +1,9 @@
-# Chart.js Doughnut plugin to allow for lines of text in the middle
+# Chart.js (Version 3) Doughnut Chart plugin to display custom lines of text in the center of the donut.
 
-Chart.js plugin module that allows to display multiple lines of text centered in the middle area of the doughnut charts 
+This Chart.js plugin module allows you to display multiple lines of text centered in the middle area of the Doughnut Charts which can be customized for the font, color, size and other attributes.  This is a fork from Ciprian Ciurea (ciprianciurea) who wrote it for Chart.js Version 2 and modified by Alan Scott (scottalan) for Chart.js (version 3).  I had no success after I went to Version 3 of Chart.js and realized that I needed a slightly different path for TypeScript.  I have tried to combine these other authors work and update some of the usage and information to make it easier for those on my path.
 
 ## Demo
-Have a look at the [Demo page](https://ciprianciurea.github.io/chartjs-plugin-doughnutlabel/samples/index.html).
+Have a look at the [Demo page](https://FreedomRings.github.io/chartjs-plugin-doughnutlabel-v3/samples/index.html).
 
 ## Table of contents
 
@@ -16,7 +16,7 @@ Have a look at the [Demo page](https://ciprianciurea.github.io/chartjs-plugin-do
 
 Install through npm:
 ```
-npm install --save chartjs-plugin-doughnutlabel
+npm install --save chartjs-plugin-doughnutlabel-v3
 ```
 
 ## Usage 
@@ -70,13 +70,13 @@ var getTotal = function(myDoughnutChart) {
 
 ### Usage without a module bundler
 The plugin can be manually downloaded from the 
-[Releases page on GitHub!](https://github.com/ciprianciurea/chartjs-plugin-doughnutlabel/releases)
+[Releases page on GitHub!](https://github.com/freedomrings/chartjs-plugin-doughnutlabel-v3/releases)
 ```
-<script src="chartjs-plugin-doughnutlabel.js"></script>
+<script src="chartjs-plugin-doughnutlabel-v3.js"></script>
 ```
 or use the minified version
 ```
-<script src="chartjs-plugin-doughnutlabel.min.js"></script>
+<script src="chartjs-plugin-doughnutlabel-v3.min.js"></script>
 ```
 
 ## Development
@@ -99,4 +99,4 @@ For an example on how to use this plugin with angular, please check this stackbl
 
 ## License
 
-`chartjs-plugin-doughnutlabel` is available under the [MIT license](LICENSE.md).
+`chartjs-plugin-doughnutlabel-v3` is available under the [MIT license](LICENSE.md).

@@ -1,10 +1,4 @@
-// import { LabelText } from './options.d';
 import { Chart, ChartComponent, Color, FontSpec } from 'chart.js';
-
-// export interface Font extends FontSpec {
-//   lineHeight: number;
-//   string: string;
-// }
 
 export type Font = {
   lineHeight: number;
