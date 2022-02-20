@@ -1,6 +1,6 @@
-# Chart.js (Version 3) Doughnut Chart plugin to display custom lines of text in the center of the donut.
+# Chart.js (Version 3) Doughnut Chart plugin to display custom lines of text in the center of the circle.
 
-This Chart.js plugin module allows you to display multiple lines of text centered in the middle area of the Doughnut Charts which can be customized for the font, color, size and other attributes.  This is a fork from Ciprian Ciurea (ciprianciurea) who wrote it for Chart.js Version 2 and modified by Alan Scott (scottalan) for Chart.js (version 3).  I had no success after I went to Version 3 of Chart.js and realized that I needed a slightly different path for TypeScript.  I have tried to combine these other authors work and update some of the usage and information to make it easier for those on my path.
+This Chart.js plugin module allows you to display multiple lines of dynamic text centered in the middle area of the Doughnut Chart - which can be customized for the font, color, size and other attributes.  This is a fork from Ciprian Ciurea (ciprianciurea) who wrote it for Chart.js Version 2 and later modified by Alan Scott (scottalan) for Chart.js Version 3 (which still required the application of a stale commit).  I still had problems after I went to Version 3 of Chart.js but I really liked their work, especially since I wanted to use the plugin with TypeScript, Angular and Electron.  This plugin is a combination of these other authors work with a few updates and usage notes to make it easier for those on my path.  Please enjoy.
 
 ## Demo
 Have a look at the [Demo page](https://FreedomRings.github.io/chartjs-plugin-doughnutlabel-v3/samples/index.html).
