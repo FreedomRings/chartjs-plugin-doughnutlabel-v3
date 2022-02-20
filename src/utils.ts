@@ -3,7 +3,6 @@ import {Chart, FontSpec} from 'chart.js';
 import { valueOrDefault, isNullOrUndef, toLineHeight } from 'chart.js/helpers';
 import { Font, LabelOptions } from '../types/options';
 
-
 const parseText = (text: LabelText, chart: Chart): string => typeof text === 'function' ? text(chart) : text;
 
 const parseFont = (value: FontSpec): Font => {
@@ -44,8 +43,7 @@ const textSize = (chart: Chart, labels: LabelOptions[]): {height: number, width:
   let height = 0;
 
   labels.forEach(label => {
-    // We allow 'text' to be a string or the return value of a function as
-    // a string.
+    // We allow 'text' to be a string or the return value of a function as a string.
     const text = typeof label.text === 'function' ? label.text(chart) : label.text;
     ctx.font = label.font ? label.font.string : '';
     width = Math.max(ctx.measureText(text).width, width);

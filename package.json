@@ -1,7 +1,7 @@
 {
-  "name": "@scottalan/chartjs-plugin-doughnutlabel",
-  "version": "3.0.3",
-  "description": "Chart.js plugin for doughnut chart to display lines of text in the center",
+  "name": "chartjs-plugin-doughnutlabel-v3",
+  "version": "1.0.0",
+  "description": "Chart.js (Version 3) Doughnut Chart plugin to display custom lines of text in the center of the donut.",
   "main": "dist/chartjs-plugin-doughnutlabel.js",
   "module": "dist/chartjs-plugin-doughnutlabel.esm.js",
   "typings": "types/index.d.ts",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottalan/chartjs-plugin-doughnutlabel.git"
+    "url": "https://github.com/FreedomRings/chartjs-plugin-doughnutlabel-v3.git"
   },
   "files": [
     "dist/*.js",
@@ -23,7 +23,7 @@
     "build:dev": "rollup -c rollup.config.js --watch",
     "prepare": "npm run build"
   },
-  "author": "",
+  "author": "Jeff Brower",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.8",
