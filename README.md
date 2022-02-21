@@ -1,6 +1,6 @@
 # Chart.js (Version 3) Doughnut Chart plugin to display custom lines of text in the center of the circle.
 
-This Chart.js plugin module allows you to display multiple lines of dynamic text centered in the middle area of the Doughnut Chart - which can be customized for the font, color, size and other attributes.  This is a fork from Ciprian Ciurea (ciprianciurea) who wrote it for Chart.js Version 2 and later modified by Alan Scott (scottalan) for Chart.js Version 3 (which still required the application of a stale commit).  I still had problems after I went to Version 3 of Chart.js but I really liked their work, especially since I wanted to use the plugin with TypeScript, Angular and Electron.  This plugin is a combination of these other authors work with a few updates and usage notes to make it easier for those on my path.  Please enjoy.
+This Chart.js plugin module allows you to display multiple lines of dynamic text centered in the middle area of the Doughnut Chart - which can be customized for the font, color, size and other attributes.  This is a fork from Ciprian Ciurea (ciprianciurea) who wrote it for Chart.js Version 2 and later modified by Alan Scott (scottalan) for Chart.js Version 3 (which still required the application of a stale commit).  I still had problems after I went to Version 3 of Chart.js but I really liked their work.  Since I wanted to use the plugin with both CommonJS and the combination of TypeScript, Angular and Electron this seemed like a great place to start.  This plugin is a combination of these other authors work with a few updates and usage notes to make it easier for those on my path.  Please enjoy.
 
 ## Demo
 Have a look at the [Demo page](https://FreedomRings.github.io/chartjs-plugin-doughnutlabel-v3/samples/index.html).
@@ -95,7 +95,7 @@ const getTotal = function(myChart) {
 // Doughnut with multiple lines of text in the center
 const ctx = document.getElementById('chart1').getContext('2d')
 const sampleChart = new Chart(ctx, {
-	type: 'doughnut',
+  type: 'doughnut',
 	data: {
 		datasets: [{
 			data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
@@ -116,17 +116,17 @@ const sampleChart = new Chart(ctx, {
 				fullSize: true,
 				text: 'Multiple Lines of Text',
 				padding: {
-                    top: 20,
-                    bottom: 10
-                }
+          top: 20,
+          bottom: 10
+        }
 			},
 			subtitle: {
 				display: true,
 				fullSize: true,
 				text: '(With calculations!)',
 				padding: {
-                    bottom: 20
-                }
+          bottom: 20
+        }
 			},
 			legend: {
 				display: true,
@@ -182,6 +182,10 @@ or use the minified version
 ```
 <script src="chartjs-plugin-doughnutlabel.min.js"></script>
 ```
+or use the ECMAScript (ECM) version
+```
+<script src="chartjs-plugin-doughnutlabel.esm.js"></script>
+```
 
 ## Development
 
@@ -193,7 +197,7 @@ You first need to install node dependencies (requires [Node.js](https://nodejs.o
 ## In Angular
 
 For an example on how to use this plugin with angular, please check this stackblitz prototype:
-[doughnutlabel plugin in angular](https://stackblitz.com/edit/angular-v9tfg7)
+[doughnutlabel plugin in angular](https://angular-ivy-kow4wa.stackblitz.io/)
 
 ## License
 

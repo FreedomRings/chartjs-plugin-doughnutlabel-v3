@@ -23,8 +23,18 @@
     "build:dev": "rollup -c rollup.config.js --watch",
     "prepare": "npm run build"
   },
+  "homepage": "https://github.com/FreedomRings/chartjs-plugin-doughnutlabel-v3",
   "author": "Jeff Brower <jeff@pointhere.net>",
   "license": "MIT",
+  "keywords": [
+    "chart.js",
+    "doughnut",
+    "donut",
+    "plugin",
+    "center",
+    "middle",
+    "angular"
+  ],
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.9",
