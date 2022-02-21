@@ -8,8 +8,8 @@ var randomScalingFactor = function() {
 };
 
 document.getElementById('randomizeData').addEventListener('click', function() {
-	myChart3.config.data.datasets[0].data = [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()];
-	myChart3.update();
+	sampleChart.config.data.datasets[0].data = [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()];
+	sampleChart.update();
 });
 
 var getTotal = function(myChart) {
@@ -19,116 +19,7 @@ var getTotal = function(myChart) {
 
 // Doughnut with multiple lines of text in the center
 var ctx = document.getElementById('chart1').getContext('2d');
-new Chart(ctx, {
-	type: 'doughnut',
-	data: {
-		datasets: [{
-			data: [4000, 3000, 2000, 1000],
-			backgroundColor: DEFAULT_COLORS1,
-			label: 'Dataset 1'
-		}],
-		labels: ['Item one', 'Item two', 'Item three', 'Item four']
-	},
-	options: {
-		responsive: true,
-		legend: {
-			display: false,
-			position: 'top',
-		},
-		title: {
-			display: true,
-			fontSize: 20,
-			text: 'Multiple lines of text'
-		},
-		animation: {
-			animateScale: true,
-			animateRotate: true
-		},
-		plugins: {
-			doughnutLabel: {
-				labels: [
-					{
-						text: 'The title',
-						font: {
-							size: '60'
-						}
-					},
-					{
-						text: 'The subtitle',
-						font: {
-							size: '50'
-						},
-						color: 'grey'
-					},
-					{
-						text: '$100.000',
-						font: {
-							size: '30'
-						},
-						color: 'red'
-					},
-					{
-						text: '95%',
-						font: {
-							size: '45'
-						},
-						color: 'green'
-					}
-				]
-			}
-		}
-	}
-});
-
-// Doughnut with one line of text in the center
-ctx = document.getElementById('chart2').getContext('2d');
-new Chart(ctx, {
-	type: 'doughnut',
-	data: {
-		datasets: [{
-			data: [4000, 3000, 2000, 1000],
-			backgroundColor: DEFAULT_COLORS2,
-			label: 'Dataset 1'
-		}],
-		labels: ['Item one', 'Item two', 'Item three', 'Item four']
-	},
-	options: {
-		responsive: true,
-		legend: {
-			display: false,
-			position: 'top',
-		},
-		title: {
-			display: true,
-			fontSize: 20,
-			text: 'One line of text'
-		},
-		animation: {
-			animateScale: true,
-			animateRotate: true
-		},
-		plugins: {
-			doughnutLabel: {
-				labels: [
-					{
-						text: 'This is one line of text',
-						font: {
-							size: '60',
-							family: 'Arial, Helvetica, sans-serif',
-							style: 'italic',
-							weight: 'bold'
-						},
-						color: '#bc2c1a'
-					}
-				]
-			}
-		}
-	}
-});
-
-// Doughnut with one line of text in the center
-ctx = document.getElementById('chart3').getContext('2d');
-var myChart3 = new Chart(ctx, {
+var sampleChart = new Chart(ctx, {
 	type: 'doughnut',
 	data: {
 		datasets: [{
@@ -139,33 +30,66 @@ var myChart3 = new Chart(ctx, {
 		labels: ['Item one', 'Item two', 'Item three', 'Item four']
 	},
 	options: {
-		responsive: true,
-		legend: {
-			display: false,
-			position: 'top',
-		},
-		title: {
-			display: true,
-			fontSize: 20,
-			text: 'Calculated value'
-		},
+		responsive: false,
 		animation: {
 			animateScale: true,
 			animateRotate: true
 		},
 		plugins: {
-			doughnutlabel: {
+			title: {
+				display: true,
+				fullSize: true,
+				text: 'Multiple Lines of Text',
+				padding: {
+                    top: 20,
+                    bottom: 10
+                }
+			},
+			subtitle: {
+				display: true,
+				fullSize: true,
+				text: '(With calculations!)',
+				padding: {
+                    bottom: 20
+                }
+			},
+			legend: {
+				display: true,
+				position: 'top',
+			},
+			doughnutLabel: {
 				labels: [
 					{
-						text: getTotal,
+						text: 'The Title',
+						color: 'blue',
 						font: {
-							size: '60',
+							size: '35',
 							family: 'Arial, Helvetica, sans-serif',
 							style: 'italic',
 							weight: 'bold'
+						}
+					},
+					{
+						text: 'The Subtitle',
+						font: {
+							size: '25'
 						},
-						color: '#bc2c1a'
-					}
+						color: 'grey'
+					},
+					{
+						text: '$100.00',
+						font: {
+							size: '20'
+						},
+						color: 'red'
+					},
+					{
+						text: getTotal,
+						font: {
+							size: '20'
+						},
+						color: 'green'
+					},
 				]
 			}
 		}

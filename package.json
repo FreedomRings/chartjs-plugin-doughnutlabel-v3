@@ -23,8 +23,8 @@
     "build:dev": "rollup -c rollup.config.js --watch",
     "prepare": "npm run build"
   },
-  "author": "Jeff Brower",
-  "license": "ISC",
+  "author": "Jeff Brower <jeff@pointhere.net>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.9",
