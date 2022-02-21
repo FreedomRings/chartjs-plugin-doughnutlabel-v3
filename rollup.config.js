@@ -13,10 +13,14 @@ const name = 'chartjs-plugin-doughnutlabel';
 
 const banner = `
   /**
-   * ${pkg.name} v${pkg.version}
-   * @license
+   * npm package:  ${pkg.name} v${pkg.version}
+   * 
+   * Chart.js (Version 3) Doughnut Chart plugin to display
+   * custom lines of text in the center of the circle.
+   * 
    * author: ${pkg.author}
-   * ${name}.js v${pkg.version}
+   * 
+   * supplies:  ${name}.js v${pkg.version}
    * Released under the ${pkg.license} license.
    */
 `;

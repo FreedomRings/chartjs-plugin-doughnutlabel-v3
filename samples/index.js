@@ -31,16 +31,28 @@ var sampleChart = new Chart(ctx, {
 	},
 	options: {
 		responsive: false,
-		title: {
-			display: true,
-			fontSize: 20,
-			text: 'Multiple lines of text'
-		},
 		animation: {
 			animateScale: true,
 			animateRotate: true
 		},
 		plugins: {
+			title: {
+				display: true,
+				fullSize: true,
+				text: 'Multiple Lines of Text',
+				padding: {
+                    top: 20,
+                    bottom: 10
+                }
+			},
+			subtitle: {
+				display: true,
+				fullSize: true,
+				text: '(With calculations!)',
+				padding: {
+                    bottom: 20
+                }
+			},
 			legend: {
 				display: true,
 				position: 'top',
