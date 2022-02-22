@@ -179,7 +179,7 @@ const sampleChart = new Chart(ctx, {
 
 ### Usage without a module bundler
 The plugin can be manually downloaded from the 
-[Releases page on GitHub!](https://github.com/freedomrings/chartjs-plugin-doughnutlabel-v3/releases)
+[Releases page on GitHub!](https://github.com/FreedomRings/chartjs-plugin-doughnutlabel-v3/releases)
 ```
 <script src="chartjs-plugin-doughnutlabel.js"></script>
 ```
