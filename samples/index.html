@@ -1,40 +1,52 @@
-<!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>chartjs-plugin-doughnutlabel-v3</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+    <script src="../dist/chartjs-plugin-doughnutlabel.min.js"></script>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>chartjs-plugin-doughnutlabel / samples</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="icon" type="image/ico" href="favicon.ico">
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
-	<script src="chartjs-plugin-doughnutlabel.js"></script>
-</head>
+  <body>
+    <h2>Chart.js HTML/JavaScript/CSS Plugin Example</h2>
+    <div id="header">
+      <div class="title">
+        <span class="main">chartjs-plugin-doughnutlabel-v3</span>
+        <span class="name">Sample Chart</span>
+      </div>
+      <div class="caption">
+        <a href="http://www.chartjs.org" target="_blank">Chart.js</a> plugin for
+        doughnut chart to display lines of text in the center
+      </div>
+      <div class="description">
+        <p>
+          This Chart.js plugin module allows you to display multiple lines of
+          dynamic text centered in the middle area of the Doughnut Chart - which
+          can be customized for the font, color, size and other attributes. It
+          can be downloaded as a package from
+          <a
+            href="https://www.npmjs.com/package/chartjs-plugin-doughnutlabel-v3"
+            target="_blank"
+          >
+            https://www.npmjs.com/package/chartjs-plugin-doughnutlabel-v3
+          </a>
+        </p>
+      </div>
+      <div class="links">
+      <a
+        class="btn btn-gh"
+        target="_blank"
+        href="https://github.com/FreedomRings/chartjs-plugin-doughnutlabel-v3"
+        >View the source on GitHub</a
+      >
+    </div>
+    <button id="randomizeData"  class="centeredButton">Click to Randomize Chart Data</button>
+    <div class="chartContainer">
+      <canvas id="chart1" class="centeredCanvas" width="500" height="500"></canvas>
+    </div>
+  </body>
 
-<body>
-	<div id="header">
-		<div class="title">
-			<span class="main">chartjs-plugin-doughnutlabel-v3</span>
-			<span class="name">Sample Chart</span>
-		</div>
-		<div class="caption">
-			<a href="http://www.chartjs.org">Chart.js</a> plugin for doughnut chart to display lines of text in the center</div>
-		<div class="links">
-			<a class="btn btn-gh" href="https://github.com/FreedomRings/chartjs-plugin-doughnutlabel-v3">GitHub</a>
-		</div>
-	</div>
-
-	<div>
-		<canvas id="chart1" width="500" height="500"></canvas>
-	</div>
-
-	<div>
-		<button id="randomizeData">Randomize Data</button>
-	</div>
-	
-</body>
-
-<script type="text/javascript" src="index.js"></script>
-
+  <script type="text/javascript" src="index.js"></script>
 </html>

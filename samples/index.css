@@ -1,142 +1,177 @@
-body, html {
-	color: #333538;
-	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-	line-height: 1.6;
-	padding: 0;
-	margin: 0;
+body,
+html {
+  color: #333538;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	max-width: 800px;
-	margin: auto;
-	padding: 16px 32px;
+  max-width: 800px;
+  margin: auto;
+  padding: 16px 32px;
 }
 
 a {
-	color: #f27173;
-	text-decoration: none;
+  color: #f27173;
+  text-decoration: none;
 }
 
 a:hover {
-	color: #e25f5f;
-	text-decoration: underline;
+  color: #e25f5f;
+  text-decoration: underline;
 }
 
 .btn {
-	background-color: #aaa;
-	border-radius: 4px;
-	color: white;
-	font-weight: 600;
-	padding: 0.25rem 0.75rem;
+  background-color: #aaa;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
 }
 
 .btn .fa {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 .btn:hover {
-	background-color: #888;
-	color: white;
-	text-decoration: none;
+  background-color: #888;
+  color: white;
+  text-decoration: none;
 }
 
-.btn-chartjs { background-color: #f27173; }
-.btn-chartjs:hover { background-color: #e25f5f; }
-.btn-docs:hover { background-color: #2793db; }
-.btn-docs { background-color: #36A2EB; }
-.btn-docs:hover { background-color: #2793db; }
-.btn-gh { background-color: #444; }
-.btn-gh:hover { background-color: #333; }
+.btn-chartjs {
+  background-color: #f27173;
+}
+.btn-chartjs:hover {
+  background-color: #e25f5f;
+}
+.btn-docs:hover {
+  background-color: #2793db;
+}
+.btn-docs {
+  background-color: #36a2eb;
+}
+.btn-docs:hover {
+  background-color: #2793db;
+}
+.btn-gh {
+  background-color: #444;
+}
+.btn-gh:hover {
+  background-color: #333;
+}
 
 .btn-on {
-	border-style: inset;
+  border-style: inset;
 }
 
 #header {
-	background-size: 40px;
-	text-align: center;
-	padding: 32px 0;
+  background-size: 40px;
+  text-align: center;
+  padding: 0;
 }
 
 #header .title {
-	font-size: 1.5rem;
-	font-weight: 600;
-	white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 #header .title .main {
-	color: #f27173;
-	display: inline-block;
-	font-size: 1.5rem;
-	font-weight: 600;
+  color: #f27173;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 #header .title .name:before {
-	content: '/';
-	margin-right: 0.5rem;
+  content: '/';
+  margin-right: 0.5rem;
 }
 
 #header .caption {
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 #header .links {
-	display: flex;
-	justify-content: center;
-	padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
 }
 
 #header .links a {
-	font-size: 0.85rem;
-	margin: 0.2rem;
+  font-size: 0.85rem;
+  margin: 0.2rem;
 }
 
 #header .links .fa:before {
-	margin-right: 0.5em;
+  margin-right: 0.5em;
 }
 
-.samples-category {
-	display: inline-block;
-	margin-bottom: 32px;
-	vertical-align: top;
-	width: 25%;
+h2 {
+  font-family: Lato;
+  text-align: center;
+  color: blue;
 }
 
-.samples-category > .title {
-	color: #aaa;
-	font-weight: 300;
-	font-size: 1.5rem;
+.description {
+  font-family: Lato;
+  width: 540px;
+  padding: 0;
+  margin: auto;
+  display: block;
+  text-align: left;
+}
+canvas {
+  border: 1px solid;
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.samples-category:hover > .title {
-	color: black;
+.centeredCanvas {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.samples-category > .items {
-	padding: 8px 0;
+.centeredButton {
+  margin-bottom: 10px;
+  margin: auto;
+  display: block;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.samples-entry {
-	padding: 0 0 4px 0;
-}
-
-.samples-entry > .title {
-	font-weight: 700;
+.chartContainer {
+  padding-top: 10px;
 }
 
 @media (max-width: 640px) {
-	#header {padding: 8px 0;}
-	.samples-category { width: 33%; }
+  #header {
+    padding: 8px 0;
+  }
 }
 
 @media (max-width: 512px) {
-	#header .caption { font-size: 1.05rem; }
-	#header .title .name { display: none }
-	#header .links a { flex-direction: column; }
-	#header .links .fa { margin: 0 }
-	.samples-category { width: 50%; }
-}
-
-@media (max-width: 384px) {
-	.samples-category { width: 100%; }
+  #header .caption {
+    font-size: 1.05rem;
+  }
+  #header .title .name {
+    display: none;
+  }
+  #header .links a {
+    flex-direction: column;
+  }
+  #header .links .fa {
+    margin: 0;
+  }
 }

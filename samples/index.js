@@ -1,25 +1,25 @@
-'use strict';
+'use strict'
 
-var DEFAULT_COLORS1 = ['#f08700', '#f49f0a', '#efca08', '#00a6a6', '#bbdef0'];
-var DEFAULT_COLORS2 = ['#7fb7be', '#357266', '#dacc3e', '#bc2c1a', '#7d1538'];
+const DEFAULT_COLORS1 = ['#f08700', '#f49f0a', '#efca08', '#00a6a6', '#bbdef0']
+const DEFAULT_COLORS2 = ['#7fb7be', '#357266', '#dacc3e', '#bc2c1a', '#7d1538']
 
-var randomScalingFactor = function() {
-	return Math.round(Math.random() * 100);
+const randomScalingFactor = function() {
+	return Math.round(Math.random() * 100)
 };
 
 document.getElementById('randomizeData').addEventListener('click', function() {
-	sampleChart.config.data.datasets[0].data = [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()];
-	sampleChart.update();
-});
+	sampleChart.config.data.datasets[0].data = [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+	sampleChart.update()
+})
 
-var getTotal = function(myChart) {
-	var sum = myChart.config.data.datasets[0].data.reduce((a, b) => a + b, 0);
-	return `Total: ${sum}`;
+const getTotal = function(myChart) {
+	const sum = myChart.config.data.datasets[0].data.reduce((a, b) => a + b, 0)
+	return `Total: ${sum}`
 }
 
 // Doughnut with multiple lines of text in the center
-var ctx = document.getElementById('chart1').getContext('2d');
-var sampleChart = new Chart(ctx, {
+const ctx = document.getElementById('chart1').getContext('2d')
+const sampleChart = new Chart(ctx, {
 	type: 'doughnut',
 	data: {
 		datasets: [{
@@ -94,4 +94,4 @@ var sampleChart = new Chart(ctx, {
 			}
 		}
 	}
-});
+})
