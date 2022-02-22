@@ -4,10 +4,10 @@ This Chart.js plugin module allows you to display multiple lines of dynamic text
 
 ## Demo
 If JavaScript is your thing, have a look at the prototype:
-[HTML/JavaScript/CSS Demo page](https://web-platform-cc9kgs.stackblitz.io/).
+[Click here to see the HTML/JavaScript/CSS demo page](https://stackblitz.com/edit/web-platform-cc9kgs).
 
 For an example on how to use this plugin with angular, please check this stackblitz prototype:
-[doughnutlabel plugin in angular 12](https://angular-ivy-kow4wa.stackblitz.io/)
+[Click here to see the plugin in angular 13](https://stackblitz.com/edit/angular-ivy-kow4wa)
 
 
 ## Table of contents
@@ -15,7 +15,6 @@ For an example on how to use this plugin with angular, please check this stackbl
 - [Installation](#installation)
 - [Usage example](#usage)
 - [Development](#development)
-- [Angular](#angular)
 - [License](#license)
 
 ## Installation
@@ -199,11 +198,6 @@ You first need to install node dependencies (requires [Node.js](https://nodejs.o
 
     > npm install chartjs-plugin-doughnutlabel-v3
 
-
-## Angular
-
-For an example on how to use this plugin with angular, please check this stackblitz prototype:
-[doughnutlabel plugin in angular](https://angular-ivy-kow4wa.stackblitz.io/)
 
 ## License
 
