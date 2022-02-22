@@ -1,6 +1,6 @@
 {
   "name": "chartjs-plugin-doughnutlabel-v3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chart.js (Version 3) Doughnut Chart plugin to display custom lines of text in the center of the donut.",
   "main": "dist/chartjs-plugin-doughnutlabel.js",
   "module": "dist/chartjs-plugin-doughnutlabel.esm.js",

@@ -3,13 +3,19 @@
 This Chart.js plugin module allows you to display multiple lines of dynamic text centered in the middle area of the Doughnut Chart - which can be customized for the font, color, size and other attributes.  This is a fork from Ciprian Ciurea (ciprianciurea) who wrote it for Chart.js Version 2 and later modified by Alan Scott (scottalan) for Chart.js Version 3 (which still required the application of a stale commit).  I still had problems after I went to Version 3 of Chart.js but I really liked their work.  Since I wanted to use the plugin with both CommonJS and the combination of TypeScript, Angular and Electron this seemed like a great place to start.  This plugin is a combination of these other authors work with a few updates and usage notes to make it easier for those on my path.  Please enjoy.
 
 ## Demo
-Have a look at the [Demo page](https://FreedomRings.github.io/chartjs-plugin-doughnutlabel-v3/samples/index.html).
+If JavaScript is your thing, have a look at the prototype:
+[HTML/JavaScript/CSS Demo page](https://web-platform-cc9kgs.stackblitz.io/).
+
+For an example on how to use this plugin with angular, please check this stackblitz prototype:
+[doughnutlabel plugin in angular 12](https://angular-ivy-kow4wa.stackblitz.io/)
+
 
 ## Table of contents
 
 - [Installation](#installation)
 - [Usage example](#usage)
 - [Development](#development)
+- [Angular](#angular)
 - [License](#license)
 
 ## Installation
@@ -194,7 +200,7 @@ You first need to install node dependencies (requires [Node.js](https://nodejs.o
     > npm install chartjs-plugin-doughnutlabel-v3
 
 
-## In Angular
+## Angular
 
 For an example on how to use this plugin with angular, please check this stackblitz prototype:
 [doughnutlabel plugin in angular](https://angular-ivy-kow4wa.stackblitz.io/)

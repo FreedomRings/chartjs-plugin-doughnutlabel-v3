@@ -1,13 +1,13 @@
 
   /**
-   * npm package:  chartjs-plugin-doughnutlabel-v3 v1.0.0
+   * npm package:  chartjs-plugin-doughnutlabel-v3 v1.0.1
    * 
    * Chart.js (Version 3) Doughnut Chart plugin to display
    * custom lines of text in the center of the circle.
    * 
    * author: Jeff Brower <jeff@pointhere.net>
    * 
-   * supplies:  chartjs-plugin-doughnutlabel.js v1.0.0
+   * supplies:  chartjs-plugin-doughnutlabel.js v1.0.1
    * Released under the MIT license.
    */
 
