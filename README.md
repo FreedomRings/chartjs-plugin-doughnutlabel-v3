@@ -201,4 +201,4 @@ You first need to install node dependencies (requires [Node.js](https://nodejs.o
 
 ## License
 
-`chartjs-plugin-doughnutlabel-v3` is available under the [MIT license](LICENSE.md).
+`chartjs-plugin-doughnutlabel-v3` is available under the [MIT license](LICENSE).
