@@ -32,7 +32,7 @@ For straight HTML/JavaScript the useage is pretty straighforward.  Your HTML sim
 in the scripts for Chart.js (Version 3) and the script for this plugin, then attaches your
 HTML to the backing JavaScript for the page.
 
-```
+``` js
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -79,7 +79,7 @@ The backing Java Script is also straightforward, just remember that the Chart Op
 changed in Verion 3 and you will find that some of the Version 2 options have been moved 
 into plugins (for example).  Obviously, Chart.js still has its issues for responsive sizing, 
 so I normally do fixed sizing for predictable results, even when printing.
-```
+``` js
 const DEFAULT_COLORS1 = ['#f08700', '#f49f0a', '#efca08', '#00a6a6', '#bbdef0']
 const DEFAULT_COLORS2 = ['#7fb7be', '#357266', '#dacc3e', '#bc2c1a', '#7d1538']
 
@@ -180,15 +180,15 @@ const sampleChart = new Chart(ctx, {
 ### Usage without a module bundler
 The plugin can be manually downloaded from the 
 [Releases page on GitHub!](https://github.com/FreedomRings/chartjs-plugin-doughnutlabel-v3/releases)
-```
+``` js
 <script src="chartjs-plugin-doughnutlabel.js"></script>
 ```
 or use the minified version
-```
+``` js
 <script src="chartjs-plugin-doughnutlabel.min.js"></script>
 ```
 or use the ECMAScript (ECM) version
-```
+``` js
 <script src="chartjs-plugin-doughnutlabel.esm.js"></script>
 ```
 
